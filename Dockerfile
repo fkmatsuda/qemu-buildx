@@ -1,8 +1,8 @@
-FROM docker
+FROM docker:20.10.8-dind
 
 ENV DOCKER_CLI_EXPERIMENTAL=enabled
 
 COPY --from=docker/buildx-bin /buildx /usr/libexec/docker/cli-plugins/docker-buildx
-COPY scripts/entry.sh ./
+COPY scripts/install-buildx ./bin/
 
-ENTRYPOINT ["./entry.sh" ] 
+CMD install-buildx
