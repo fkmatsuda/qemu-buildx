@@ -1,4 +1,4 @@
-FROM docker:20.10.12-dind-alpine3.15
+FROM docker:20-dind
 
 ENV DOCKER_CLI_EXPERIMENTAL=enabled
 
