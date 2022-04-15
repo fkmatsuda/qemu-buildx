@@ -5,6 +5,6 @@ ENV DOCKER_CLI_EXPERIMENTAL=enabled
 COPY --from=docker/buildx-bin:0.8.2 /buildx /usr/libexec/docker/cli-plugins/docker-buildx
 COPY scripts/install-buildx ./bin/
 
-RUN apk add --no-cache openssh-client minio-client git
+RUN apk add --no-cache openssh-client s3-cmd git
 
 ENTRYPOINT [ "install-buildx" ] 
