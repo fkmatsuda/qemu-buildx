@@ -1,4 +1,4 @@
-FROM docker:26.1.0-alpine3.19
+FROM docker:26.1.3-alpine3.19
 
 ENV DOCKER_CLI_EXPERIMENTAL=enabled
 
