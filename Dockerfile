@@ -1,4 +1,4 @@
-FROM docker:27.3.1-dind-rootless
+FROM docker:27.4.0-dind-rootless
 
 ENV DOCKER_CLI_EXPERIMENTAL=enabled
 
